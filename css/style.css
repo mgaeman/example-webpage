@@ -5,7 +5,9 @@ body{
   color: black;
 }
 .smaller-image{
-  width: 700px;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
 }
 #japan-flag{
   width: 50px;
@@ -15,10 +17,12 @@ body{
 }
 .divider {
   border-top: 1px solid black;
-  width: 1000px;
+  width: 90%;
+  max-width: 1000px;
 }
 #bottom-divider{
-  width: 1230px;
+  width: 95%;
+  max-width: 1230px;
 }
 .portrait-border{
   border-color: black;
@@ -28,9 +32,11 @@ body{
 }
 #infobox{
   background-color: rgb(191,191,191);
-  width: 1230px;
+  width: 95%;
+  max-width: 1230px;
   border-radius: 1%;
   margin: 80px auto 80px auto;
+  padding: 0 20px;
 }
 .header{
   font-size: 50px;
@@ -56,4 +62,48 @@ body{
   font-size: 20px;
   padding-top: 20px;
   padding-bottom: 30px;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .header {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  #title2 {
+    font-size: 28px;
+  }
+  
+  #title3 {
+    font-size: 24px;
+  }
+  
+  #infobox {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  .quote {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  
+  #title2 {
+    font-size: 38px;
+  }
+  
+  #title3 {
+    font-size: 32px;
+  }
 }
